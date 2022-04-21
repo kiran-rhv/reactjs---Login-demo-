@@ -1,0 +1,74 @@
+.login {
+  height: 100vh;
+  position: relative;
+
+  .login-content {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+
+    .title {
+      color: white;
+    }
+
+    .title-text {
+      color: white;
+    }
+
+    .register {
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      font-style: italic;
+    }
+
+    .register:hover {
+      color: rgb(53, 53, 223);
+    }
+  }
+
+  .form-css {
+    .user-input {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-radius: 0;
+      width: 250px;
+      font-size: 16px;
+      background-color: transparent;
+      color: white;
+    }
+
+    .user-input:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .password-form {
+      position: relative;
+    }
+
+    .fontawesome-icon {
+      position: absolute;
+      top: 20%;
+      right: 3%;
+      cursor: pointer;
+      color: #aeaeae;
+    }
+
+    .btn-submit {
+      border-radius: 0;
+      width: 250px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .forgot {
+      cursor: pointer;
+      color: #aeaeae;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}

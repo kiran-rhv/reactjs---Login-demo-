@@ -1,0 +1,51 @@
+.register {
+  height: 100vh;
+  position: relative;
+
+  .register-content {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+
+    .register-form-css {
+      .user-input {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        width: 250px;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+      }
+
+      .user-input:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .btn-register-submit {
+        width: 250px;
+        border-radius: 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .register-side {
+      color: white;
+
+      .back-to-login {
+        cursor: pointer;
+        text-decoration: none;
+        font-style: italic;
+        color: white;
+      }
+
+      .back-to-login:hover {
+        color: #0d6efd;
+      }
+    }
+  }
+}

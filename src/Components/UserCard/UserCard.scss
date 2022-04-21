@@ -1,0 +1,17 @@
+.user-card {
+  overflow-x: hidden;
+
+  .card-style {
+    margin: 25px 25px;
+    border: none;
+    border-radius: 0;
+  }
+  .card-avatar {
+    min-height: 270px;
+    background-color: gray;
+    .card-img {
+      border-radius: 0;
+      object-fit: cover;
+    }
+  }
+}
