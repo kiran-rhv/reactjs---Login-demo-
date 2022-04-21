@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Container, Card, Row, Col } from "react-bootstrap";
 import "./UserCard.scss";
 
 function UserCard() {
@@ -21,38 +21,40 @@ function UserCard() {
 
   return (
     <>
-      <div className="user-card">
-        <Row>
-          <Col className="col-md-3">
+      <Container>
+        <div className="user-card">
+          <Row>
             {userinfo.length &&
               userinfo.map((user) => {
                 return (
-                  <div key={user.id}>
-                    <Card className="card-style">
-                      <div className="card-avatar">
-                        <Card.Img
-                          variant="top"
-                          className="card-img"
-                          src={user.avatar}
-                        />
-                      </div>
-                      <Card.Body>
-                        <Card.Title>
-                          {`${user.first_name} ${user.last_name}`}
-                        </Card.Title>
-                        <Card.Text className="font-weight-bold">
-                          <span>ID Number : </span>
-                          <span>{user.id}</span>
-                        </Card.Text>
-                        <Card.Text>Email-ID : {user.email}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </div>
+                  <Col className="col-md-3">
+                    <div key={user.id}>
+                      <Card className="card-style">
+                        <div className="card-avatar">
+                          <Card.Img
+                            variant="top"
+                            className="card-img"
+                            src={user.avatar}
+                          />
+                        </div>
+                        <Card.Body>
+                          <Card.Title>
+                            {`${user.first_name} ${user.last_name}`}
+                          </Card.Title>
+                          <Card.Text className="font-weight-bold">
+                            <span>ID Number : </span>
+                            <span>{user.id}</span>
+                          </Card.Text>
+                          <Card.Text>{user.email}</Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </div>
+                  </Col>
                 );
               })}
-          </Col>
-        </Row>
-      </div>
+          </Row>
+        </div>
+      </Container>
     </>
   );
 }

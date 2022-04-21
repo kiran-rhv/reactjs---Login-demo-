@@ -2,12 +2,13 @@
   overflow-x: hidden;
 
   .card-style {
-    margin: 25px 25px;
+    margin: 10px 0px;
     border: none;
     border-radius: 0;
+    min-height: 350px;
   }
   .card-avatar {
-    min-height: 270px;
+    min-height: 260px;
     background-color: gray;
     .card-img {
       border-radius: 0;
