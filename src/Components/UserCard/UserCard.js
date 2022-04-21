@@ -1,6 +1,8 @@
 import { React, useEffect, useState } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import "./UserCard.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIdCardClip, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function UserCard() {
   const [userinfo, setuserinfo] = useState([]);
@@ -42,10 +44,17 @@ function UserCard() {
                             {`${user.first_name} ${user.last_name}`}
                           </Card.Title>
                           <Card.Text className="font-weight-bold">
-                            <span>ID Number : </span>
-                            <span>{user.id}</span>
+                            <span className="fontawesome-icon">
+                              <FontAwesomeIcon icon={faIdCardClip} />
+                            </span>
+                            <span className="ms-2">{user.id}</span>
                           </Card.Text>
-                          <Card.Text>{user.email}</Card.Text>
+                          <Card.Text>
+                            <span className="fontawesome-icon">
+                              <FontAwesomeIcon icon={faEnvelope} />
+                            </span>
+                            <span className="ms-2">{user.email}</span>
+                          </Card.Text>
                         </Card.Body>
                       </Card>
                     </div>
