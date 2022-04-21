@@ -1,0 +1,25 @@
+.single-user-detail {
+  overflow-x: hidden;
+  margin: 20px 0px;
+
+  .user {
+    min-height: 300px;
+
+    .user-img {
+      border: 1px solid blue;
+      min-height: 300px;
+      background-color: gray;
+
+      .avatar {
+        object-fit: cover;
+        width: 100%;
+        min-height: 300px;
+        background-color: gray;
+      }
+    }
+
+    .user-info {
+      border: 1px solid red;
+    }
+  }
+}

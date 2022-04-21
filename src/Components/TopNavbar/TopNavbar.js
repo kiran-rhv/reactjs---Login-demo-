@@ -8,7 +8,7 @@ function TopNavbar() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container fluid="lg">
+        <Container>
           <Navbar.Brand className="logo">LOGO</Navbar.Brand>
           <Nav className="ms-auto shodow-none">
             <Dropdown>

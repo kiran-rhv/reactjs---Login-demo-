@@ -1,18 +1,32 @@
 .user-card {
   overflow-x: hidden;
 
-  .card-style {
-    margin: 10px 0px;
-    border: none;
-    border-radius: 0;
-    min-height: 350px;
+  .user-heading {
+    margin: 10px 0px 0px 0px;
   }
-  .card-avatar {
-    min-height: 250px;
-    background-color: gray;
-    .card-img {
+
+  .user {
+    color: black;
+    text-decoration: none;
+
+    .card-style {
+      margin: 10px 0px;
+      border: none;
       border-radius: 0;
-      object-fit: cover;
+      min-height: 350px;
     }
+    .card-avatar {
+      min-height: 250px;
+      background-color: gray;
+      .card-img {
+        border-radius: 0;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .user:hover {
+    color: black;
+    text-decoration: none;
   }
 }
